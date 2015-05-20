@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Duhoot</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+	<![endif]-->
+	<link rel="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css"/>
+</head>
+<body>
+	<header class="du-header">
+		<div class="ba-container cf">
+			<a class="du-logo ba-float-left" href="/">
+				<img src="img/logo.png" alt="Duhoot"/>
+			</a>
+			<a href="#" class="du-login ba-float-right">
+				<i class="fa fa-user"></i> <span>LOGIN</span>
+			</a>
+			<a href="#" class="du-search ba-float-right">
+				<i class="fa fa-search"></i>
+			</a>
+			<a href="#" class="du-menu-toggle ba-float-right">
+				<i class="fa fa-bars"></i>
+			</a>
+			<nav class="ba-float-right">
+				<ul class="du-menu cf">
+					<li><a href="#">Reality</a></li>
+					<li><a href="#">Living</a></li>
+					<li><a href="#">EduCation</a></li>
+					<li><a href="#">Entertainment</a></li>
+					<li><a href="#">Mobility</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="du-menu-overlay"></div>
+	<section class="du-search-row">
+		<div class="ba-container">
+			<h2 class="ba-text-center">What are you looking for?</h2>
+			<form action="#" method="post" class="ba-width-medium-1-2 ba-container-center">
+				<div class="ba-grid du-form-row">
+					<div class="ba-width-1-2">
+						<select name="location" class="ba-width-1-1">
+							<option value="Dubai">Dubai</option>
+							<option value="Poltava">Poltava</option>
+							<option value="London">London</option>
+						</select>
+					</div>
+					<div class="ba-width-1-2">
+						<select name="location" class="ba-width-1-1">
+							<option value="Education">Education</option>
+							<option value="Music">Music</option>
+							<option value="Rent">Rent</option>
+						</select>
+					</div>
+				</div>
+				<div class="du-form-row">
+					<input class="ba-width-1-1" type="text" name="keyword" placeholder="Keyword, name, date, ..."/>
+				</div>
+				<div class="du-form-row ba-text-center"><button type="button">SEARCH</button></div>
+			</form>
+		</div>
+	</section>
+	<section class="du-filter-row">
+		<div class="ba-container">
+			<div class="ba-grid ba-grid-nopad">
+				<div class="ba-width-large-1-3">
+					<div class="du-filter-items">
+						<a href="">Recommended</a>
+						<a href="">latest</a>
+						<a href="">Highlights</a>
+					</div>
+				</div>
+				<div class="ba-width-large-1-3">
+					<div class="du-filter-location ba-text-center">
+						<select name="location">
+							<option value="Dubai">DUBAI</option>
+							<option value="Poltava">POLTAVA</option>
+							<option value="London">LONDON</option>
+						</select>
+						<button>SHOW MAP<i class="fa fa-map-marker"></i></button>
+					</div>
+				</div>
+				<div class="ba-width-large-1-3">
+					<form class="du-filter-type" action="#" method="post">
+						<label class="du-filter-label">FILTER:</label>
+						<label class="du-filter-type-rent">
+							<input name="filter-type" type="checkbox"/>
+							<i></i>
+						</label>
+						<label class="du-filter-type-people">
+							<input name="filter-type" type="checkbox"/>
+							<i></i>
+						</label>
+						<label class="du-filter-type-education">
+							<input name="filter-type" type="checkbox"/>
+							<i></i>
+						</label>
+						<label class="du-filter-type-music">
+							<input name="filter-type" type="checkbox"/>
+							<i></i>
+						</label>
+						<label class="du-filter-type-travel">
+							<input name="filter-type" type="checkbox"/>
+							<i></i>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="du-items-row">
+		<div class="ba-container ba-container-row">
+			<div class="ba-grid">
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-house.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-music">
+						<a class="du-thumbnail du-thumbnail-music">
+							<img src="img/items/du-music.jpg" alt="house 1"/>
+							<!--<span class="du-price">$2,900</span>-->
+							<span class="du-filter-type du-filter-type-music"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">Beach party festival<br> 2014</p>
+							<h3 class="du-title">Long beach</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i class="active"></i><i></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(1165)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-travel">
+						<a class="du-thumbnail du-thumbnail-travel">
+							<img src="img/items/du-house.jpg" alt="house 1"/>
+						<!--	<span class="du-price">$2,900</span>-->
+							<span class="du-filter-type du-filter-type-travel"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">Aliquam quis pulvinar<br> purus</p>
+							<h3 class="du-title">Bus Trans</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i class="active"></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-house2.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i class="active"></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(165)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ba-grid">
+				<div class="ba-width-large-1-2">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-vision.jpg" alt="house 1"/>
+							<!--<span class="du-price">$2,900</span>-->
+							<div class="du-item-hidden">
+								<h4>Vision agency</h4>
+								<div class="du-rating-star">
+									<div class="du-rating">
+										<i></i><i class="active"></i><i></i><i></i><i></i>
+									</div>
+									<span class="du-vote-count-long">(365)</span>
+								</div>
+							</div>
+							<span class="du-filter-type du-filter-type-rent du-filter-type-long"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>Show more</button>
+							<div class="du-ration-wrap-long">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body cf">
+							<div class="du-rating-comment">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+							</div>
+							<div class="ba-grid">
+								<div class="ba-width-1-6">
+									<div class="du-item-img-line"><img class="du-item-img" src="img/items/lucy.png" alt="Lucy"/></div>
+								</div>
+								<div class="ba-width-5-6">
+									<h5 class="ba-text-left ba-float-left">Lucy-P</h5>
+									<p class="ba-text-left ba-float-left">“Aliquam quis pulvinar purus. Etiam cursus<br> ipsum quis enim faucibus, quis posuere orci<br> ornare. Duis mattis sagittis fringilla.”
+										<a class="du-read" href="#">...read more</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-large-1-2">
+					<div class="du-item du-item-music">
+						<a class="du-thumbnail du-thumbnail-music">
+							<img src="img/items/du-skybox.jpg" alt="house 1"/>
+							<!--<span class="du-price">$2,900</span>-->
+							<div class="du-item-hidden">
+								<h4>Skybox club</h4>
+								<div class="du-rating-star">
+									<div class="du-rating">
+										<i class="active"></i><i></i><i></i><i></i><i></i>
+									</div>
+									<span class="du-vote-count-long">(365)</span>
+								</div>
+							</div>
+							<span class="du-filter-type du-filter-type-rent du-filter-type-long"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>Show more</button>
+							<div class="du-ration-wrap-long">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body cf">
+							<div class="du-rating-comment">
+								<div class="du-rating">
+									<i class="active"></i><i></i><i></i><i></i><i></i>
+								</div>
+							</div>
+							<div class="ba-grid">
+								<div class="ba-width-1-6">
+									<div class="du-item-img-line"><img class="du-item-img" src="img/items/peter.png" alt="Peter"/></div>
+								</div>
+								<div class="ba-width-5-6">
+									<h5 class="ba-text-left ba-float-left">Peter145</h5>
+									<p class="ba-text-left ba-float-left">“Aliquam quis pulvinar purus. Etiam cursus<br> ipsum quis enim faucibus, quis posuere orci<br> ornare. Duis mattis sagittis fringilla.”
+										<a class="du-read" href="#">...read more</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ba-grid">
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-house.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-music">
+						<a class="du-thumbnail du-thumbnail-music">
+							<img src="img/items/du-music.jpg" alt="house 1"/>
+							<!--<span class="du-price">$2,900</span>-->
+							<span class="du-filter-type du-filter-type-music"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">Beach party festival<br> 2014</p>
+							<h3 class="du-title">Long beach</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i class="active"></i><i></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(1165)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-travel">
+						<a class="du-thumbnail du-thumbnail-travel">
+							<img src="img/items/du-house.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-travel"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">Aliquam quis pulvinar<br> purus</p>
+							<h3 class="du-title">Bus Trans</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i class="active"></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-house2.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i class="active"></i><i></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(165)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ba-grid margi">
+				<div class="ba-width-large-1-2">
+					<div class="du-item du-item-music">
+						<a class="du-thumbnail du-thumbnail-music">
+							<img src="img/items/du-skybox.jpg" alt="house 1"/>
+							<!--<span class="du-price">$2,900</span>-->
+							<div class="du-item-hidden">
+								<h4>Skybox club</h4>
+								<div class="du-rating-star">
+									<div class="du-rating">
+										<i></i><i class="active"></i><i></i><i></i><i></i>
+									</div>
+									<span class="du-vote-count-long">(365)</span>
+								</div>
+							</div>
+							<span class="du-filter-type du-filter-type-rent du-filter-type-long"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>Show more</button>
+							<div class="du-ration-wrap-long">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body cf">
+							<div class="du-rating-comment">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+							</div>
+							<div class="ba-grid">
+								<div class="ba-width-1-6">
+									<div class="du-item-img-line"><img class="du-item-img" src="img/items/peter.png" alt="Peter"/></div>
+								</div>
+								<div class="ba-width-5-6">
+									<h5 class="ba-text-left ba-float-left">Peter145</h5>
+									<p class="ba-text-left ba-float-left">“Aliquam quis pulvinar purus. Etiam cursus<br> ipsum quis enim faucibus, quis posuere orci<br> ornare. Duis mattis sagittis fringilla.”
+										<a class="du-read" href="#">...read more</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-rent">
+						<a class="du-thumbnail">
+							<img src="img/items/du-house.jpg" alt="house 1"/>
+							<span class="du-price">$2,900</span>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-large-1-4">
+					<div class="du-item du-item-music">
+						<a class="du-thumbnail du-thumbnail-music">
+							<img src="img/items/du-music.jpg" alt="house 1"/>
+							<span class="du-filter-type du-filter-type-rent"><i></i></span>
+							<button class="du-more"><i class="fa fa-search"></i>more</button>
+							<div class="du-ration-wrap">
+								<div class="du-rating-item">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<i class="fa fa-comments"></i>
+							</div>
+						</a>
+						<div class="du-item-body">
+							<p class="du-desc">2 bedroom house for rent in Dubai</p>
+							<h3 class="du-title">Vision Agency</h3>
+							<div class="du-rating-wrap">
+								<div class="du-rating">
+									<i></i><i></i><i class="active"></i><i></i><i></i>
+								</div>
+								<span class="du-vote-count">(365)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="du-load ba-text-center" href="#">Load more <i class="fa fa-long-arrow-right"></i></a>
+ 		</div>
+	</section>
+	<section class="du-reality">
+		<div class="ba-container ba-text-center">
+			<div class="ba-container-wrap">
+				<h6>What can DuHoot offer to you?</h6>
+				<p class="du-reality-text">Etiam cursus ipsum quis enim faucibus</p>
+			</div>
+			<div class="ba-grid ba-grid-nopad du-reality-item ba-container-w">
+				<div class="ba-width-small-1-3 ba-width-medium-1-3 ba-width-large-1-5">
+					<i class="du-rent"></i>
+				</div>
+				<div class="ba-width-small-1-3 ba-width-medium-1-3 ba-width-large-1-5">
+					<i class="du-people"></i>
+				</div>
+				<div class="ba-width-small-1-3 ba-width-medium-1-3 ba-width-large-1-5">
+					<i class="du-education"></i>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-medium-1-2 ba-width-large-1-5">
+					<i class="du-music"></i>
+				</div>
+				<div class="ba-width-small-1-2 ba-width-medium-1-2 ba-width-large-1-5">
+					<i class="du-travel"></i>
+				</div>
+			</div>
+			<div class="du-reality-item">
+			<p class="reality">Reality</p>
+			<div class="ba-grid ba-grid-reality ba-container-w">
+				<div class="ba-width-medium-1-8">
+					<i class="fa fa-bolt"></i>
+				</div>
+				<div class="ba-width-medium-3-8">
+					<p class="ba-text-left">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+				</div>
+				<div class="ba-width-medium-1-8">
+					<i class="fa fa-leaf"></i>
+				</div>
+				<div class="ba-width-medium-3-8">
+					<p class="ba-text-left">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<footer class="du-footer">
+		<div class="ba-container ba-container-footer ba-text-center">
+			<h1>Subscribe to our newsletter</h1>
+			<div class="du-form cf">
+				<i class="fa fa-envelope-o ba-float-left"></i>
+				<form class="du-form-email ba-float-left" action="#" method="post">
+					<input type="email" name="emailname" id="emailname" placeholder="your@email.com" required>
+				</form>
+				<button class="du-footer-button ba-float-right">Subscribe</button>
+			</div>
+		</div>
+		<div class="ba-container du-footer-low">
+			<div class="ba-grid ba-grid-nopad">
+				<div class="ba-width-medium-1-3 ba-width-large-1-3">
+					<p class="du-ipsum">Ipsum quis</p>
+					<div class="du-ipsum-list">
+						<a href="#">Aliquam quis</a>
+						<a href="#">Pulvinar purus</a>
+						<a href="#">Etiam cursus</a>
+						<a href="#">Ipsum quis</a>
+						<a href="#">Enim faucib</a>
+					</div>
+				</div>
+				<div class="ba-width-medium-1-3 ba-width-large-1-3">
+					<p class="du-ipsum">Ipsum quis</p>
+					<div class="du-ipsum-list">
+						<a href="#">Aliquam quis</a>
+						<a href="#">Pulvinar purus</a>
+						<a href="#">Etiam cursus</a>
+						<a href="#">Ipsum quis</a>
+						<a href="#">Enim faucib</a>
+					</div>
+				</div>
+				<div class="ba-width-medium-1-3 ba-width-large-1-3">
+					<p class="du-ipsum">Follow us</p>
+					<div class="du-twitt">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google-plus"></i>
+						<i class="fa fa-youtube"></i>
+					</div>
+					<p class="du-copy">Copyright © All Rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--	<section class="ba-container ba-container-center">
+			<div class="du-rating">
+			<i></i><i></i><i class="active"></i><i></i><i></i>
+			</div>
+		</section>-->
+
+	<div class="outdated"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="outdatedbrowser/outdatedbrowser.min.js"></script>
+	<script>
+		outdatedBrowser({
+			bgColor: '#f25648',
+			color: '#ffffff',
+			lowerThan: 'transform',
+			languagePath: 'outdatedbrowser/lang/en.html'
+		})
+	</script>
+</body>
+</html>

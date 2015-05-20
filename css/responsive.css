@@ -1,0 +1,127 @@
+/*
+$breakpoint-small: 480px; // For widths more than 480px
+$breakpoint-medium: 768px; // For width more than 768px
+$breakpoint-large: 960px; // For width more than 960px
+$breakpoint-xlarge: 1220px; // For width more than 1220px
+*/
+.du-menu-toggle {
+	width: 74px;
+	font-size: 24px;
+	background-color: #f974db;
+	text-align: center;
+}
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 960px) {
+	.du-menu-toggle {
+		display: none;
+	}
+}
+@media (max-width: 959px) {
+	.du-header {
+		background: #ffffff;
+	}
+	.du-menu,
+	.du-menu-overlay {
+		/*visibility: hidden;*/
+		position: fixed;
+		bottom: 0;
+		top: 74px;
+		-webkit-transition: -webkit-transform .4s ease-in, right .6s ease-in;
+		-moz-transition: -moz-transform .4s ease-in, right .6s ease-in;
+		transition: transform .4s ease-in, right .6s ease-in;
+	}
+	.du-menu {
+		right: 0;
+		width: 242px;
+		z-index: 999;
+		background: #172B37;
+		padding: 20px;
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	.du-menu-overlay {
+		right: 100%;
+		left: 0;
+		z-index: 998;
+		background: rgba(255, 255, 255, 0.80);
+	}
+	.du-menu-open {
+		overflow: hidden;
+	}
+	.du-menu-open .du-menu,
+	.du-menu-open .du-menu-overlay {
+		/*visibility: visible;*/
+	}
+	.du-menu-open .du-menu-overlay {
+		right: 0;
+	}
+	.du-menu-open .du-menu {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.du-menu li{
+		float: none;
+	}
+	.du-menu a{
+		line-height: 1.3;
+		height: auto;
+		padding: 0 0 20px;
+	}
+	.du-menu a:hover{
+		color: #E94E38;
+	}
+	.du-menu-open .du-menu-toggle {
+		background: #172B37;
+	}
+	.du-login {
+		margin-right: -20px;
+	}
+	.du-login span {
+		display: none;
+	}
+	.du-filter-items,
+	.du-filter-type,
+	.du-filter-location {
+		text-align: center;
+		height: auto;
+		line-height: normal;
+	}
+	.du-filter-row .du-filter-items,
+	.du-filter-row .du-filter-type,
+	.du-filter-row .du-filter-location {
+		text-align: center;
+		height: auto;
+		padding: 10px 0;
+	}
+	.du-item {
+		margin-bottom: 20px;
+	}
+	.du-items-row .ba-grid + .ba-grid {
+		margin-top: 0;
+	}
+	.ba-container-wrap {
+		border-bottom: none;
+	}
+	.du-form {
+		width: 100%;
+	}
+	.du-footer-button {
+	}
+	.du-footer-low,
+	.du-footer-low .du-ipsum {
+		text-align: center;
+		margin: auto;
+	}
+}
+@media (min-width: 1220px) {
+
+}
